@@ -3,12 +3,11 @@ import refs from './refs.js';
 const { days, hours, mins, secs } = refs;
 
 class CountdownTimer {
-  constructor({ targetDate, selector, onTick }) {
+  constructor({ targetDate, onTick }) {
     this.targetDate = targetDate;
     this.intervalId = null;
     this.deltaTime = 0;
     this.onTick = onTick;
-    this.selector = selector;
   }
 
   start() {
